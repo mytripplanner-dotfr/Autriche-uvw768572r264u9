@@ -1,0 +1,391 @@
+{
+  "pays": "Autriche",
+  "drapeau": "🇦🇹",
+  "symbole": "🏔️",
+  "titre": "L'Autriche Impériale et Alpine : Un Voyage de 13 Jours",
+  "budget_total": "3650€",
+  "duree": "13 jours",
+  "temps_vol": "12h avec escale depuis Sain, Pakistan",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée en douceur à Vienne",
+      "legende": "Arrivée en douceur dans la capitale autrichienne. Après un long voyage, installez-vous confortablement et imprégnez-vous de l'atmosphère impériale de Vienne. Une première balade vous permettra de prendre vos marques et d'admirer l'architecture majestueuse.",
+      "lieu": "Vienne",
+      "activites": [
+        "🛬 <strong>Arrivée à Vienne</strong> : Atterrissage à l'aéroport international de Vienne (VIE) et transfert vers votre hôtel au cœur de la ville. Prenez le temps de vous installer et de vous rafraîchir après le vol.",
+        "🚶‍♂️ <strong>Balade découverte dans le centre historique</strong> : Promenez-vous dans les rues piétonnes autour de la Cathédrale Saint-Étienne, admirez les façades baroques et ressentez l'ambiance viennoise. C'est une excellente façon de s'acclimater sans effort."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Transfert aéroport",
+          "texte": "Le City Airport Train (CAT) relie l'aéroport au centre-ville (Wien Mitte) en 16 minutes. Une option rapide et pratique."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏰",
+      "titre": "Vienne Impériale : Le Palais de Schönbrunn",
+      "legende": "Plongez au cœur de l'histoire impériale de Vienne en explorant le Palais de Schönbrunn, résidence d'été des Habsbourg. Laissez-vous émerveiller par la grandeur des lieux et les jardins à la française, témoins d'une époque révolue.",
+      "lieu": "Vienne",
+      "activites": [
+        "🏰 <strong>Visite du Château de Schönbrunn</strong> : Explorez les somptueuses salles de ce palais baroque, classé au patrimoine mondial de l'UNESCO, et découvrez la vie de Sissi et François-Joseph. Ne manquez pas la Gloriette pour une vue panoramique.",
+        "🌳 <strong>Promenade dans les jardins de Schönbrunn</strong> : Flânez dans les vastes jardins à la française, admirez les fontaines, les statues et le zoo le plus ancien du monde. C'est un havre de paix et de verdure."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "🎟️",
+          "titre": "Conseil billets",
+          "texte": "Optez pour un \"Classic Pass\" pour Schönbrunn, il inclut la visite du palais, la Gloriette et d'autres attractions, offrant un meilleur rapport qualité-prix."
+        },
+        {
+          "symbole": "👨‍👩‍👧‍👦",
+          "titre": "Pour les familles",
+          "texte": "Le zoo de Schönbrunn, situé dans les jardins du palais, est une excellente activité pour les enfants et les adultes."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🖼️",
+      "titre": "Art, Culture et Gourmandise Viennoise",
+      "legende": "Continuez votre exploration de Vienne avec une immersion dans l'art et la culture. Visitez des musées emblématiques et savourez les délices culinaires viennois, comme la célèbre Sachertorte, pour une journée riche en découvertes.",
+      "lieu": "Vienne",
+      "activites": [
+        "🖼️ <strong>Découverte du Quartier des Musées (MuseumsQuartier)</strong> : Explorez l'un des plus grands complexes culturels au monde, abritant des musées d'art moderne et contemporain. Choisissez entre le Leopold Museum ou le MUMOK selon vos préférences.",
+        "🍰 <strong>Pause gourmande au Café Sacher</strong> : Dégustez une authentique Sachertorte, le célèbre gâteau au chocolat viennois, dans le cadre historique du Café Sacher. C'est une expérience culinaire incontournable.",
+        "🎶 <strong>Concert de musique classique</strong> : Assistez à un concert de Mozart ou Strauss dans l'une des magnifiques salles de concert de Vienne, comme le Musikverein ou le Konzerthaus. Une soirée mémorable garantie."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Astuce culturelle",
+          "texte": "Réservez vos billets de concert à l'avance, surtout si vous visez une salle prestigieuse ou une date spécifique."
+        },
+        {
+          "symbole": "☕",
+          "titre": "Culture du café",
+          "texte": "Les cafés viennois sont classés au patrimoine immatériel de l'UNESCO. Prenez le temps de savourer un café et une pâtisserie."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "👑",
+      "titre": "Le Ring et le Cœur de l'Empire",
+      "legende": "Parcourez le célèbre Ringstrasse, boulevard circulaire bordé de monuments grandioses, et admirez l'Opéra d'État de Vienne. Terminez la journée par une visite du Palais Hofburg, cœur de l'empire des Habsbourg pendant des siècles.",
+      "lieu": "Vienne",
+      "activites": [
+        "🚃 <strong>Tour en tramway sur la Ringstrasse</strong> : Montez à bord du tramway pour un tour complet de la Ringstrasse, admirant l'Opéra, le Parlement, l'Hôtel de Ville et le Burgtheater. C'est une manière efficace de voir les principaux édifices.",
+        "👑 <strong>Visite du Palais Hofburg</strong> : Explorez l'ancienne résidence impériale d'hiver des Habsbourg, qui abrite aujourd'hui les appartements impériaux, le musée Sissi et la collection d'argenterie. Plongez dans la vie quotidienne de la cour."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "🏛️",
+          "titre": "Histoire du Ring",
+          "texte": "La Ringstrasse a été construite au XIXe siècle sur l'emplacement des anciens remparts de la ville, symbolisant la puissance et la modernité de l'Empire austro-hongrois."
+        },
+        {
+          "symbole": "🎭",
+          "titre": "Opéra de Vienne",
+          "texte": "Si vous êtes amateur, des billets \"debout\" pour l'Opéra d'État de Vienne sont disponibles à bas prix juste avant les représentations."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🚆",
+      "titre": "Voyage vers Salzbourg et première immersion",
+      "legende": "Quittez la capitale pour la charmante ville de Salzbourg, berceau de Mozart et décor de \"La Mélodie du Bonheur\". Installez-vous et commencez à explorer son centre historique baroque, classé à l'UNESCO, pour une première impression mémorable.",
+      "lieu": "Salzbourg",
+      "activites": [
+        "🚆 <strong>Trajet en train vers Salzbourg</strong> : Profitez d'un agréable voyage en train à travers les paysages autrichiens, reliant Vienne à Salzbourg en environ 2h30. Les trains sont confortables et ponctuels.",
+        "🚶‍♀️ <strong>Balade dans la Vieille Ville de Salzbourg</strong> : Flânez dans les ruelles médiévales, admirez les places baroques et découvrez la maison natale de Mozart. L'ambiance y est unique et pittoresque."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🚂",
+          "titre": "Voyage en train",
+          "texte": "Les chemins de fer autrichiens (ÖBB) sont très efficaces. Réservez vos billets à l'avance pour obtenir de meilleurs tarifs."
+        },
+        {
+          "symbole": "🗺️",
+          "titre": "Orientation",
+          "texte": "Le centre historique de Salzbourg est compact et se visite facilement à pied. Prévoyez de bonnes chaussures."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "⛰️",
+      "titre": "Forteresse, Musique et Jardins",
+      "legende": "Dominez Salzbourg depuis la forteresse de Hohensalzburg et explorez les lieux emblématiques liés à Wolfgang Amadeus Mozart. Laissez-vous charmer par l'atmosphère musicale de la ville et la beauté de ses jardins baroques.",
+      "lieu": "Salzbourg",
+      "activites": [
+        "⛰️ <strong>Visite de la Forteresse de Hohensalzburg</strong> : Prenez le funiculaire pour atteindre cette imposante forteresse médiévale, offrant des vues spectaculaires sur la ville et les Alpes environnantes. Explorez ses musées et ses cours intérieures.",
+        "🎼 <strong>Maison natale de Mozart et Résidence Mozart</strong> : Visitez les deux résidences où Mozart a vécu à Salzbourg pour en apprendre davantage sur sa vie et son œuvre. C'est un pèlerinage pour les amateurs de musique classique.",
+        "🌸 <strong>Jardins de Mirabell</strong> : Promenez-vous dans les magnifiques jardins baroques du Palais Mirabell, célèbres pour leurs parterres fleuris et leurs statues. Un lieu idéal pour une pause relaxante."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "💳",
+          "titre": "Salzburg Card",
+          "texte": "La Salzburg Card offre l'accès gratuit à de nombreuses attractions et aux transports en commun. Elle peut être très rentable pour 24 ou 48 heures."
+        },
+        {
+          "symbole": "🎶",
+          "titre": "Soirée Mozart",
+          "texte": "Des dîners-concerts Mozart sont souvent organisés dans la forteresse, offrant une expérience unique."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🏞️",
+      "titre": "Évasion dans le Salzkammergut",
+      "legende": "Évadez-vous de la ville pour une journée dans la magnifique région du Salzkammergut, avec ses lacs scintillants et ses montagnes majestueuses. Profitez de la nature autrichienne et de ses paysages à couper le souffle, loin de l'agitation urbaine.",
+      "lieu": "Salzkammergut (excursion depuis Salzbourg)",
+      "activites": [
+        "🏞️ <strong>Excursion au lac Wolfgangsee</strong> : Prenez un bus pour rejoindre le lac Wolfgangsee, l'un des plus beaux du Salzkammergut. Profitez d'une promenade en bateau ou d'une balade le long de ses rives.",
+        "🚠 <strong>Montée au Schafbergbahn (si saisonnier)</strong> : Si la saison le permet, prenez le train à crémaillère historique du Schafbergbahn pour une vue imprenable sur plusieurs lacs et montagnes. C'est une expérience panoramique inoubliable."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🚌",
+          "titre": "Transport en bus",
+          "texte": "Les bus locaux sont un excellent moyen d'explorer le Salzkammergut. Vérifiez les horaires à l'avance, surtout pour le retour."
+        },
+        {
+          "symbole": "🥾",
+          "titre": "Randonnée",
+          "texte": "De nombreux sentiers de randonnée sont disponibles autour du Wolfgangsee pour tous les niveaux."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🏔️",
+      "titre": "Voyage vers Innsbruck et découverte alpine",
+      "legende": "Dirigez-vous vers l'ouest, vers la capitale du Tyrol, Innsbruck. Nichée au cœur des Alpes, cette ville offre un mélange unique d'histoire impériale et de paysages montagneux à couper le souffle, promettant une nouvelle facette de l'Autriche.",
+      "lieu": "Innsbruck",
+      "activites": [
+        "🚆 <strong>Trajet en train vers Innsbruck</strong> : Un voyage pittoresque en train de Salzbourg à Innsbruck (environ 2h). Admirez les paysages alpins défiler par la fenêtre, une véritable carte postale.",
+        "✨ <strong>Découverte du Petit Toit d'Or et de la Vieille Ville</strong> : Flânez dans le centre historique d'Innsbruck, admirez le célèbre Petit Toit d'Or et les maisons colorées. C'est le cœur vibrant de la ville."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Le Petit Toit d'Or",
+          "texte": "Ce balcon orné de 2657 tuiles de cuivre dorées était le loge impérial d'où l'Empereur Maximilien Ier assistait aux tournois."
+        },
+        {
+          "symbole": "🚶",
+          "titre": "Flânerie",
+          "texte": "Prenez le temps de vous perdre dans les ruelles de la vieille ville, bordées de boutiques traditionnelles et de cafés."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🚠",
+      "titre": "Sommets Alpins et Palais Impérial",
+      "legende": "Montez au sommet des Alpes pour des vues spectaculaires et explorez le Palais Impérial d'Innsbruck, témoin de l'histoire des Habsbourg dans le Tyrol. Une journée entre grandeur impériale et majesté naturelle.",
+      "lieu": "Innsbruck",
+      "activites": [
+        "🏔️ <strong>Ascension à la Nordkette</strong> : Prenez le funiculaire et les téléphériques directement depuis le centre-ville pour atteindre les sommets de la Nordkette. Profitez de vues panoramiques époustouflantes sur Innsbruck et les montagnes.",
+        "👑 <strong>Visite du Hofburg (Palais Impérial)</strong> : Explorez le Palais Impérial d'Innsbruck, l'une des trois résidences impériales autrichiennes, et découvrez ses appartements d'État et sa chapelle."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🧥",
+          "titre": "Vêtements",
+          "texte": "Même en été, les températures peuvent être fraîches en altitude. Prévoyez une veste et des chaussures confortables pour la Nordkette."
+        },
+        {
+          "symbole": "🎟️",
+          "titre": "Innsbruck Card",
+          "texte": "La Innsbruck Card inclut les transports en commun, les téléphériques et l'accès à de nombreux musées. Très utile pour optimiser votre budget."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "💎",
+      "titre": "Swarovski et Tremplin Olympique",
+      "legende": "Plongez dans le monde scintillant des Cristaux Swarovski et admirez l'architecture audacieuse du tremplin olympique de Bergisel, offrant une vue imprenable sur la ville. Une journée contrastée entre art et sport.",
+      "lieu": "Innsbruck et Wattens",
+      "activites": [
+        "💎 <strong>Visite des Mondes de Cristal Swarovski (Wattens)</strong> : Prenez un bus pour Wattens et explorez cette attraction unique, un musée et parc d'art contemporain dédié aux cristaux Swarovski. C'est une expérience visuelle fascinante.",
+        "⛷️ <strong>Découverte du Tremplin de Bergisel</strong> : Visitez le tremplin de saut à ski olympique de Bergisel, conçu par Zaha Hadid. Montez à la tour pour une vue panoramique sur Innsbruck et les Alpes."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "🚌",
+          "titre": "Accès à Wattens",
+          "texte": "Des navettes gratuites (Swarovski Kristallwelten Shuttle) partent régulièrement du centre d'Innsbruck pour Wattens."
+        },
+        {
+          "symbole": " architectural",
+          "titre": "Architecture moderne",
+          "texte": "Le tremplin de Bergisel est un exemple remarquable d'architecture contemporaine intégrée dans un paysage naturel."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🌆",
+      "titre": "Retour à Vienne et détente urbaine",
+      "legende": "Après l'aventure alpine, retournez à Vienne pour une dernière immersion dans la capitale. Profitez de l'après-midi pour vous détendre ou explorer un quartier moins connu, offrant une perspective différente de la ville.",
+      "lieu": "Vienne",
+      "activites": [
+        "🚆 <strong>Trajet en train vers Vienne</strong> : Un long mais confortable voyage en train d'Innsbruck à Vienne (environ 4h30). Profitez du paysage et préparez-vous pour les dernières découvertes viennoises.",
+        "🌳 <strong>Détente au Prater ou visite du Hundertwasserhaus</strong> : Choisissez entre une balade relaxante dans le Prater, le grand parc d'attractions et de loisirs de Vienne, ou une visite de l'originale et colorée Hundertwasserhaus."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🗓️",
+          "titre": "Réservation de train",
+          "texte": "Pour les longs trajets, il est conseillé de réserver vos billets de train à l'avance pour garantir une place et potentiellement bénéficier de tarifs réduits."
+        },
+        {
+          "symbole": "🎡",
+          "titre": "Le Prater",
+          "texte": "Ne manquez pas un tour sur la Grande Roue (Riesenrad) du Prater pour une vue imprenable sur Vienne."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "📚",
+      "titre": "Derniers instants viennois et shopping",
+      "legende": "Profitez de votre dernière journée complète à Vienne pour explorer des trésors cachés, faire du shopping ou revisiter un lieu coup de cœur. Une dernière touche de culture et de souvenirs avant le départ.",
+      "lieu": "Vienne",
+      "activites": [
+        "📚 <strong>Visite de la Bibliothèque Nationale Autrichienne</strong> : Admirez la magnifique salle d'apparat baroque de la Bibliothèque Nationale, un véritable joyau architectural. C'est un lieu impressionnant et paisible.",
+        "🛍️ <strong>Shopping sur le Graben et le Kohlmarkt</strong> : Flânez dans les rues commerçantes élégantes du centre-ville, découvrez les boutiques de luxe et les pâtisseries traditionnelles. Idéal pour trouver des souvenirs."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs typiques",
+          "texte": "Ramenez des Mozartkugel (chocolats), de la porcelaine Augarten ou des produits à l'effigie de Sissi."
+        },
+        {
+          "symbole": "🚶‍♀️",
+          "titre": "Dernière balade",
+          "texte": "Profitez d'une dernière balade dans le centre historique pour vous imprégner une dernière fois de l'atmosphère viennoise."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "✈️",
+      "titre": "Départ de Vienne",
+      "legende": "C'est le moment de dire au revoir à l'Autriche, la tête remplie de souvenirs impériaux et alpins. Transfert vers l'aéroport pour votre vol retour, emportant avec vous les images et les émotions de ce magnifique voyage.",
+      "lieu": "Vienne",
+      "activites": [
+        "✈️ <strong>Transfert vers l'aéroport de Vienne</strong> : Organisez votre transfert vers l'aéroport (train, bus ou taxi) en fonction de l'heure de votre vol. Assurez-vous d'arriver suffisamment à l'avance.",
+        "👋 <strong>Vol retour vers Sain, Pakistan</strong> : Embarquement pour votre vol, emportant avec vous les images des palais, des montagnes et de la musique autrichienne."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "🛂",
+          "titre": "Formalités de départ",
+          "texte": "Vérifiez les exigences en matière de bagages et les formalités d'immigration avant de vous rendre à l'aéroport."
+        },
+        {
+          "symbole": "⏰",
+          "titre": "Heure d'arrivée",
+          "texte": "Il est recommandé d'arriver à l'aéroport au moins 2 à 3 heures avant l'heure de départ de votre vol international."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "850€/pers (Vol A/R Sain, Pakistan - Vienne avec escale en classe économique)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "320€/pers (Trains entre villes, transports en commun, bus pour excursions)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "780€/pers (Environ 60€/jour pour 3 repas, restaurants de gamme moyenne)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "1200€/pers (12 nuits en hôtels 3 étoiles, base chambre double)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "500€/pers (Entrées musées, palais, forteresses, téléphériques, concerts)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de Mai et Septembre.",
+      "symbole": "🌸"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "L'Autriche compte environ 9 millions d'habitants, majoritairement germanophones. Le pays est réputé pour sa qualité de vie élevée.",
+      "symbole": "ℹ️"
+    },
+    {
+      "titre": "La République d'Autriche est un pays alpin d'Europe centrale, membre de l'Union Européenne. Sa capitale est Vienne.",
+      "symbole": "🇦🇹"
+    },
+    {
+      "titre": "Le zoo de Schönbrunn à Vienne est le plus ancien zoo du monde, fondé en 1752. Le MuseumsQuartier est l'un des plus grands complexes culturels au monde.",
+      "symbole": "🌍"
+    },
+    {
+      "titre": "La monnaie est l'Euro (€). Les cartes de crédit sont largement acceptées, mais ayez un peu de liquide pour les petits commerces.",
+      "symbole": "💳"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Infos officielles et inspirations pour votre voyage en Autriche",
+      "titre": "Tourisme Autriche",
+      "url": "https://www.austria.info/fr",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Horaires et réservations des trains en Autriche",
+      "titre": "Chemins de fer autrichiens (ÖBB)",
+      "url": "https://www.oebb.at/fr/",
+      "symbole": "🚆"
+    },
+    {
+      "legende": "Prévisions météo détaillées pour l'Autriche",
+      "titre": "Météo Autriche (ZAMG)",
+      "url": "https://www.zamg.ac.at/cms/de/wetter/wetter-oesterreich",
+      "symbole": "🌤️"
+    }
+  ]
+}
