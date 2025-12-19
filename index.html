@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Autriche Impériale et Alpine : Un Voyage de 13 Jours </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée en douceur à Vienne</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Vienne Impériale : Le Palais de Schönbrunn</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Art, Culture et Gourmandise Viennoise</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Le Ring et le Cœur de l'Empire</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Voyage vers Salzbourg et première immersion</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Forteresse, Musique et Jardins</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Évasion dans le Salzkammergut</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Voyage vers Innsbruck et découverte alpine</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Sommets Alpins et Palais Impérial</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Swarovski et Tremplin Olympique</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Retour à Vienne et détente urbaine</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Derniers instants viennois et shopping</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Départ de Vienne</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">AUTRICHE</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">L'Autriche Impériale et Alpine : Un Voyage de 13 Jours</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ 13 jours</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 3650€</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 12h avec escale depuis Sain, Pakistan</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée en douceur à Vienne</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Arrivée en douceur dans la capitale autrichienne. Après un long voyage, installez-vous confortablement et imprégnez-vous de l'atmosphère impériale de Vienne. Une première balade vous permettra de prendre vos marques et d'admirer l'architecture majestueuse.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛬 <strong>Arrivée à Vienne</strong> : Atterrissage à l'aéroport international de Vienne (VIE) et transfert vers votre hôtel au cœur de la ville. Prenez le temps de vous installer et de vous rafraîchir après le vol.</li><li>🚶‍♂️ <strong>Balade découverte dans le centre historique</strong> : Promenez-vous dans les rues piétonnes autour de la Cathédrale Saint-Étienne, admirez les façades baroques et ressentez l'ambiance viennoise. C'est une excellente façon de s'acclimater sans effort.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Transfert aéroport</p>
+                                <p class="text-gray-700">Le City Airport Train (CAT) relie l'aéroport au centre-ville (Wien Mitte) en 16 minutes. Une option rapide et pratique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Vienne Impériale : Le Palais de Schönbrunn</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez au cœur de l'histoire impériale de Vienne en explorant le Palais de Schönbrunn, résidence d'été des Habsbourg. Laissez-vous émerveiller par la grandeur des lieux et les jardins à la française, témoins d'une époque révolue.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏰 <strong>Visite du Château de Schönbrunn</strong> : Explorez les somptueuses salles de ce palais baroque, classé au patrimoine mondial de l'UNESCO, et découvrez la vie de Sissi et François-Joseph. Ne manquez pas la Gloriette pour une vue panoramique.</li><li>🌳 <strong>Promenade dans les jardins de Schönbrunn</strong> : Flânez dans les vastes jardins à la française, admirez les fontaines, les statues et le zoo le plus ancien du monde. C'est un havre de paix et de verdure.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎟️ Conseil billets</p>
+                                <p class="text-gray-700">Optez pour un "Classic Pass" pour Schönbrunn, il inclut la visite du palais, la Gloriette et d'autres attractions, offrant un meilleur rapport qualité-prix.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👨‍👩‍👧‍👦 Pour les familles</p>
+                                <p class="text-gray-700">Le zoo de Schönbrunn, situé dans les jardins du palais, est une excellente activité pour les enfants et les adultes.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Art, Culture et Gourmandise Viennoise</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Continuez votre exploration de Vienne avec une immersion dans l'art et la culture. Visitez des musées emblématiques et savourez les délices culinaires viennois, comme la célèbre Sachertorte, pour une journée riche en découvertes.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🖼️ <strong>Découverte du Quartier des Musées (MuseumsQuartier)</strong> : Explorez l'un des plus grands complexes culturels au monde, abritant des musées d'art moderne et contemporain. Choisissez entre le Leopold Museum ou le MUMOK selon vos préférences.</li><li>🍰 <strong>Pause gourmande au Café Sacher</strong> : Dégustez une authentique Sachertorte, le célèbre gâteau au chocolat viennois, dans le cadre historique du Café Sacher. C'est une expérience culinaire incontournable.</li><li>🎶 <strong>Concert de musique classique</strong> : Assistez à un concert de Mozart ou Strauss dans l'une des magnifiques salles de concert de Vienne, comme le Musikverein ou le Konzerthaus. Une soirée mémorable garantie.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Astuce culturelle</p>
+                                <p class="text-gray-700">Réservez vos billets de concert à l'avance, surtout si vous visez une salle prestigieuse ou une date spécifique.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☕ Culture du café</p>
+                                <p class="text-gray-700">Les cafés viennois sont classés au patrimoine immatériel de l'UNESCO. Prenez le temps de savourer un café et une pâtisserie.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Le Ring et le Cœur de l'Empire</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Parcourez le célèbre Ringstrasse, boulevard circulaire bordé de monuments grandioses, et admirez l'Opéra d'État de Vienne. Terminez la journée par une visite du Palais Hofburg, cœur de l'empire des Habsbourg pendant des siècles.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚃 <strong>Tour en tramway sur la Ringstrasse</strong> : Montez à bord du tramway pour un tour complet de la Ringstrasse, admirant l'Opéra, le Parlement, l'Hôtel de Ville et le Burgtheater. C'est une manière efficace de voir les principaux édifices.</li><li>👑 <strong>Visite du Palais Hofburg</strong> : Explorez l'ancienne résidence impériale d'hiver des Habsbourg, qui abrite aujourd'hui les appartements impériaux, le musée Sissi et la collection d'argenterie. Plongez dans la vie quotidienne de la cour.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🏛️ Histoire du Ring</p>
+                                <p class="text-gray-700">La Ringstrasse a été construite au XIXe siècle sur l'emplacement des anciens remparts de la ville, symbolisant la puissance et la modernité de l'Empire austro-hongrois.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎭 Opéra de Vienne</p>
+                                <p class="text-gray-700">Si vous êtes amateur, des billets "debout" pour l'Opéra d'État de Vienne sont disponibles à bas prix juste avant les représentations.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Voyage vers Salzbourg et première immersion</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Quittez la capitale pour la charmante ville de Salzbourg, berceau de Mozart et décor de "La Mélodie du Bonheur". Installez-vous et commencez à explorer son centre historique baroque, classé à l'UNESCO, pour une première impression mémorable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚆 <strong>Trajet en train vers Salzbourg</strong> : Profitez d'un agréable voyage en train à travers les paysages autrichiens, reliant Vienne à Salzbourg en environ 2h30. Les trains sont confortables et ponctuels.</li><li>🚶‍♀️ <strong>Balade dans la Vieille Ville de Salzbourg</strong> : Flânez dans les ruelles médiévales, admirez les places baroques et découvrez la maison natale de Mozart. L'ambiance y est unique et pittoresque.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚂 Voyage en train</p>
+                                <p class="text-gray-700">Les chemins de fer autrichiens (ÖBB) sont très efficaces. Réservez vos billets à l'avance pour obtenir de meilleurs tarifs.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Orientation</p>
+                                <p class="text-gray-700">Le centre historique de Salzbourg est compact et se visite facilement à pied. Prévoyez de bonnes chaussures.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Forteresse, Musique et Jardins</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Dominez Salzbourg depuis la forteresse de Hohensalzburg et explorez les lieux emblématiques liés à Wolfgang Amadeus Mozart. Laissez-vous charmer par l'atmosphère musicale de la ville et la beauté de ses jardins baroques.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>⛰️ <strong>Visite de la Forteresse de Hohensalzburg</strong> : Prenez le funiculaire pour atteindre cette imposante forteresse médiévale, offrant des vues spectaculaires sur la ville et les Alpes environnantes. Explorez ses musées et ses cours intérieures.</li><li>🎼 <strong>Maison natale de Mozart et Résidence Mozart</strong> : Visitez les deux résidences où Mozart a vécu à Salzbourg pour en apprendre davantage sur sa vie et son œuvre. C'est un pèlerinage pour les amateurs de musique classique.</li><li>🌸 <strong>Jardins de Mirabell</strong> : Promenez-vous dans les magnifiques jardins baroques du Palais Mirabell, célèbres pour leurs parterres fleuris et leurs statues. Un lieu idéal pour une pause relaxante.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💳 Salzburg Card</p>
+                                <p class="text-gray-700">La Salzburg Card offre l'accès gratuit à de nombreuses attractions et aux transports en commun. Elle peut être très rentable pour 24 ou 48 heures.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎶 Soirée Mozart</p>
+                                <p class="text-gray-700">Des dîners-concerts Mozart sont souvent organisés dans la forteresse, offrant une expérience unique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Évasion dans le Salzkammergut</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Évadez-vous de la ville pour une journée dans la magnifique région du Salzkammergut, avec ses lacs scintillants et ses montagnes majestueuses. Profitez de la nature autrichienne et de ses paysages à couper le souffle, loin de l'agitation urbaine.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏞️ <strong>Excursion au lac Wolfgangsee</strong> : Prenez un bus pour rejoindre le lac Wolfgangsee, l'un des plus beaux du Salzkammergut. Profitez d'une promenade en bateau ou d'une balade le long de ses rives.</li><li>🚠 <strong>Montée au Schafbergbahn (si saisonnier)</strong> : Si la saison le permet, prenez le train à crémaillère historique du Schafbergbahn pour une vue imprenable sur plusieurs lacs et montagnes. C'est une expérience panoramique inoubliable.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚌 Transport en bus</p>
+                                <p class="text-gray-700">Les bus locaux sont un excellent moyen d'explorer le Salzkammergut. Vérifiez les horaires à l'avance, surtout pour le retour.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥾 Randonnée</p>
+                                <p class="text-gray-700">De nombreux sentiers de randonnée sont disponibles autour du Wolfgangsee pour tous les niveaux.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Voyage vers Innsbruck et découverte alpine</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Dirigez-vous vers l'ouest, vers la capitale du Tyrol, Innsbruck. Nichée au cœur des Alpes, cette ville offre un mélange unique d'histoire impériale et de paysages montagneux à couper le souffle, promettant une nouvelle facette de l'Autriche.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚆 <strong>Trajet en train vers Innsbruck</strong> : Un voyage pittoresque en train de Salzbourg à Innsbruck (environ 2h). Admirez les paysages alpins défiler par la fenêtre, une véritable carte postale.</li><li>✨ <strong>Découverte du Petit Toit d'Or et de la Vieille Ville</strong> : Flânez dans le centre historique d'Innsbruck, admirez le célèbre Petit Toit d'Or et les maisons colorées. C'est le cœur vibrant de la ville.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Le Petit Toit d'Or</p>
+                                <p class="text-gray-700">Ce balcon orné de 2657 tuiles de cuivre dorées était le loge impérial d'où l'Empereur Maximilien Ier assistait aux tournois.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶 Flânerie</p>
+                                <p class="text-gray-700">Prenez le temps de vous perdre dans les ruelles de la vieille ville, bordées de boutiques traditionnelles et de cafés.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sommets Alpins et Palais Impérial</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Montez au sommet des Alpes pour des vues spectaculaires et explorez le Palais Impérial d'Innsbruck, témoin de l'histoire des Habsbourg dans le Tyrol. Une journée entre grandeur impériale et majesté naturelle.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏔️ <strong>Ascension à la Nordkette</strong> : Prenez le funiculaire et les téléphériques directement depuis le centre-ville pour atteindre les sommets de la Nordkette. Profitez de vues panoramiques époustouflantes sur Innsbruck et les montagnes.</li><li>👑 <strong>Visite du Hofburg (Palais Impérial)</strong> : Explorez le Palais Impérial d'Innsbruck, l'une des trois résidences impériales autrichiennes, et découvrez ses appartements d'État et sa chapelle.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧥 Vêtements</p>
+                                <p class="text-gray-700">Même en été, les températures peuvent être fraîches en altitude. Prévoyez une veste et des chaussures confortables pour la Nordkette.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎟️ Innsbruck Card</p>
+                                <p class="text-gray-700">La Innsbruck Card inclut les transports en commun, les téléphériques et l'accès à de nombreux musées. Très utile pour optimiser votre budget.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Swarovski et Tremplin Olympique</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans le monde scintillant des Cristaux Swarovski et admirez l'architecture audacieuse du tremplin olympique de Bergisel, offrant une vue imprenable sur la ville. Une journée contrastée entre art et sport.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>💎 <strong>Visite des Mondes de Cristal Swarovski (Wattens)</strong> : Prenez un bus pour Wattens et explorez cette attraction unique, un musée et parc d'art contemporain dédié aux cristaux Swarovski. C'est une expérience visuelle fascinante.</li><li>⛷️ <strong>Découverte du Tremplin de Bergisel</strong> : Visitez le tremplin de saut à ski olympique de Bergisel, conçu par Zaha Hadid. Montez à la tour pour une vue panoramique sur Innsbruck et les Alpes.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚌 Accès à Wattens</p>
+                                <p class="text-gray-700">Des navettes gratuites (Swarovski Kristallwelten Shuttle) partent régulièrement du centre d'Innsbruck pour Wattens.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> architectural Architecture moderne</p>
+                                <p class="text-gray-700">Le tremplin de Bergisel est un exemple remarquable d'architecture contemporaine intégrée dans un paysage naturel.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Retour à Vienne et détente urbaine</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après l'aventure alpine, retournez à Vienne pour une dernière immersion dans la capitale. Profitez de l'après-midi pour vous détendre ou explorer un quartier moins connu, offrant une perspective différente de la ville.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚆 <strong>Trajet en train vers Vienne</strong> : Un long mais confortable voyage en train d'Innsbruck à Vienne (environ 4h30). Profitez du paysage et préparez-vous pour les dernières découvertes viennoises.</li><li>🌳 <strong>Détente au Prater ou visite du Hundertwasserhaus</strong> : Choisissez entre une balade relaxante dans le Prater, le grand parc d'attractions et de loisirs de Vienne, ou une visite de l'originale et colorée Hundertwasserhaus.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗓️ Réservation de train</p>
+                                <p class="text-gray-700">Pour les longs trajets, il est conseillé de réserver vos billets de train à l'avance pour garantir une place et potentiellement bénéficier de tarifs réduits.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎡 Le Prater</p>
+                                <p class="text-gray-700">Ne manquez pas un tour sur la Grande Roue (Riesenrad) du Prater pour une vue imprenable sur Vienne.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers instants viennois et shopping</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de votre dernière journée complète à Vienne pour explorer des trésors cachés, faire du shopping ou revisiter un lieu coup de cœur. Une dernière touche de culture et de souvenirs avant le départ.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>📚 <strong>Visite de la Bibliothèque Nationale Autrichienne</strong> : Admirez la magnifique salle d'apparat baroque de la Bibliothèque Nationale, un véritable joyau architectural. C'est un lieu impressionnant et paisible.</li><li>🛍️ <strong>Shopping sur le Graben et le Kohlmarkt</strong> : Flânez dans les rues commerçantes élégantes du centre-ville, découvrez les boutiques de luxe et les pâtisseries traditionnelles. Idéal pour trouver des souvenirs.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs typiques</p>
+                                <p class="text-gray-700">Ramenez des Mozartkugel (chocolats), de la porcelaine Augarten ou des produits à l'effigie de Sissi.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♀️ Dernière balade</p>
+                                <p class="text-gray-700">Profitez d'une dernière balade dans le centre historique pour vous imprégner une dernière fois de l'atmosphère viennoise.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Vienne</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">C'est le moment de dire au revoir à l'Autriche, la tête remplie de souvenirs impériaux et alpins. Transfert vers l'aéroport pour votre vol retour, emportant avec vous les images et les émotions de ce magnifique voyage.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>✈️ <strong>Transfert vers l'aéroport de Vienne</strong> : Organisez votre transfert vers l'aéroport (train, bus ou taxi) en fonction de l'heure de votre vol. Assurez-vous d'arriver suffisamment à l'avance.</li><li>👋 <strong>Vol retour vers Sain, Pakistan</strong> : Embarquement pour votre vol, emportant avec vous les images des palais, des montagnes et de la musique autrichienne.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Autriche-uvw768572r264u9/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Formalités de départ</p>
+                                <p class="text-gray-700">Vérifiez les exigences en matière de bagages et les formalités d'immigration avant de vous rendre à l'aéroport.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Heure d'arrivée</p>
+                                <p class="text-gray-700">Il est recommandé d'arriver à l'aéroport au moins 2 à 3 heures avant l'heure de départ de votre vol international.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>850€/pers (Vol A/R Sain, Pakistan - Vienne avec escale en classe économique)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>320€/pers (Trains entre villes, transports en commun, bus pour excursions)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>780€/pers (Environ 60€/jour pour 3 repas, restaurants de gamme moyenne)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>1200€/pers (12 nuits en hôtels 3 étoiles, base chambre double)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>500€/pers (Entrées musées, palais, forteresses, téléphériques, concerts)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Les périodes idéales pour ce séjour sont les mois de Mai et Septembre.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">ℹ️ L'Autriche compte environ 9 millions d'habitants, majoritairement germanophones. Le pays est réputé pour sa qualité de vie élevée.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🇦🇹 La République d'Autriche est un pays alpin d'Europe centrale, membre de l'Union Européenne. Sa capitale est Vienne.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🌍 Le zoo de Schönbrunn à Vienne est le plus ancien zoo du monde, fondé en 1752. Le MuseumsQuartier est l'un des plus grands complexes culturels au monde.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 La monnaie est l'Euro (€). Les cartes de crédit sont largement acceptées, mais ayez un peu de liquide pour les petits commerces.</p>
+                
+            </div>            
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Autriche-uvw768572r264u9/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.austria.info/fr" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Autriche</strong></a></li>
+                    
+                        <li><a href="https://www.oebb.at/fr/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🚆 Chemins de fer autrichiens (ÖBB)</strong></a></li>
+                    
+                        <li><a href="https://www.zamg.ac.at/cms/de/wetter/wetter-oesterreich" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Autriche (ZAMG)</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+        
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
